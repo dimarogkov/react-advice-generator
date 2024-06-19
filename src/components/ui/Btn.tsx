@@ -7,25 +7,20 @@ type Props = {
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-export const Btn: React.FC<Props> = ({
-    type = 'button',
-    className = '',
-    disabled = false,
-    onClick = () => {},
-}) => {
+export const Btn: React.FC<Props> = ({ type = 'button', className = '', disabled = false, onClick = () => {} }) => {
     return (
         <button
             type={type}
             disabled={disabled}
             onClick={onClick}
             className={cn(
-                `flex items-center justify-center w-full h-[48px] md:h-[54px] font-semibold text-[14px] px-[20px] rounded-[6px] text-[#fff] bg-[#3c8067] transition-opacity duration-300 hover:opacity-80 ${className}`,
+                `absolute left-[50%] -bottom-[25px] sm:-bottom-[28px] flex items-center justify-center w-[50px] sm:w-[56px] h-[50px] sm:h-[56px] rounded-[50%] bg-[#52ffa8] transition-opacity duration-300 hover:opacity-75 -translate-x-[50%] ${className}`,
                 {
                     'pointer-events-none bg-slate-300': disabled,
                 }
             )}
         >
-            {/* <img src='btn_icon.svg' alt='btn_icon' /> */}
+            <img src='btn_icon.svg' alt='btn_icon' className='relative w-[20px] sm:w-[24px]' />
         </button>
     );
 };

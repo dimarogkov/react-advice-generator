@@ -1,6 +1,6 @@
-# Product Preview Card
+# Advice Generator
 
-[Project Demo](https://dimarogkov.github.io/react-product-preview-card)
+[Project Demo](https://dimarogkov.github.io/react-advice-generator)
 
 ## Installation Steps
 
@@ -13,3 +13,4 @@
 -   React
 -   TypeScript
 -   Tailwind CSS
+-   API
