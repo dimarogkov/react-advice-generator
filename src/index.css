@@ -4,7 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    height: 100px;
+}
+
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
     background-color: #1f2632;
 }
